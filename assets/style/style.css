@@ -1,7 +1,3 @@
-/* 
-- Schriftfarben anpassen
-*/
-
 @font-face {
   font-family: Inter;
   src: url(../font/Inter-V.ttf);
@@ -23,7 +19,6 @@ html {
   max-width: 1400px;
   width: 100vw;
   margin: 0 auto;
-  border: 1px solid black;
 }
 
 img {
@@ -31,42 +26,27 @@ img {
 }
 
 h1 {
-  /* font-size: clamp(3rem, 4vw, 2.4rem); */
-  font-size: 2.4rem;
+  font-size: clamp(2rem, 2vw, 2.4rem);
   font-weight: 700;
 }
 
 h2 {
-  font-size: clamp(3rem, 4vw, 3.9rem);
+  font-size: clamp(3rem, 3vw, 3.9rem);
   font-weight: 300;
 }
 
 h3 {
-  font-size: clamp(2.5rem, 3.3vw, 5rem);
+  font-size: clamp(4rem, 4vw, 5rem);
   font-weight: 700;
 }
 
 h4 {
-  /* font-size: clamp(2.8rem, 3.2vw, 2.3rem); */
-  font-size: 2.3rem;
+  font-size: clamp(2rem, 2vw, 2.3rem);
   font-weight: 700;
 }
 
-h5 {
-  font-size: clamp(2.5rem, 3vw, 3.2rem);
-}
-
-h6 {
-  font-size: clamp(1.6rem, 2.5vw, 1.8rem);
-}
-
 p,
-label {
-  font-size: clamp(2rem, 2vw, 2rem);
-}
-
-a,
-li {
+a {
   font-size: clamp(2rem, 2vw, 2rem);
 }
 
@@ -216,7 +196,7 @@ header article h2 {
   height: fit-content;
 }
 
-/* ! Section 4: Critque */
+/* ! Section 4: Critique */
 /* ! oberes Textfeld */
 .critique {
   margin-bottom: 20vh;
@@ -246,9 +226,6 @@ header article h2 {
 }
 
 .percentage {
-  /* display: flex;
-  justify-content: center; */
-
   padding-left: 17vw;
 }
 
@@ -298,4 +275,5 @@ header article h2 {
 
 .questions a:hover {
   color: #707275;
+  font-size: 1.8rem;
 }
