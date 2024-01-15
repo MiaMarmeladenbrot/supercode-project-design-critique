@@ -1,0 +1,96 @@
+@font-face {
+  font-family: Inter;
+  src: url(../font/Inter-V.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /* border: 1px solid black; */
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Inter;
+}
+
+img {
+  max-width: 100%;
+}
+
+h3 {
+  font-size: clamp(2.5rem, 3.3vw, 4rem);
+}
+
+h4 {
+  font-size: clamp(2.8rem, 3.2vw, 3.8rem);
+}
+
+h5 {
+  font-size: clamp(2.5rem, 3vw, 3.2rem);
+}
+
+h6 {
+  font-size: clamp(1.6rem, 2.5vw, 1.8rem);
+}
+
+p,
+label {
+  font-size: clamp(2rem, 2vw, 2rem);
+}
+
+a,
+li {
+  font-size: clamp(2rem, 2vw, 2rem);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ! Header */
+/* ! Nav-Leiste */
+
+header div {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 2vh;
+}
+
+header h1 {
+  /* font-size: clamp(3rem, 4vw, 2.4rem); */
+  font-size: 2.4rem;
+}
+
+header nav {
+  padding: 1vh 0;
+}
+
+header a {
+  color: black;
+  font-size: 1.4rem;
+  padding: 1vh 1vw;
+}
+
+.button {
+  color: black;
+  font-size: 1.7rem;
+  padding: 1vh 3vw;
+}
+
+/* ! Header-Bild*/
+/* header article {
+  background: url(../img/home_hero.png) center no-repeat;
+  background-size: cover;
+  height: 90vh;
+} */
+
+header article h2 {
+  font-size: clamp(3rem, 4vw, 3.9rem);
+  font-weight: 300;
+  text-align: center;
+  padding: 4vh 0;
+}
