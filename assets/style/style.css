@@ -73,7 +73,7 @@ header nav {
 }
 
 header a {
-  color: black;
+  color: #3d3e41;
   font-size: 1.4rem;
   padding: 0 1vw;
 }
@@ -95,12 +95,6 @@ header a {
 }
 
 /* ! Header-Bild*/
-/* header article {
-  background: url(../img/home_hero.png) center no-repeat;
-  background-size: cover;
-  height: 90vh;
-} */
-
 header article h2 {
   text-align: center;
   padding: 4vh 0;
@@ -116,10 +110,9 @@ header article h2 {
   margin-bottom: 15vh;
 }
 
-.price p:first-of-type {
+.price p:nth-of-type(1) {
   width: 50%;
   line-height: 3.2rem;
-  color: #2b2c2e;
 }
 
 .price h3 {
