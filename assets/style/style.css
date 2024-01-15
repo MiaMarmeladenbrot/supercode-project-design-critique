@@ -17,7 +17,8 @@ html {
 
 .wrapper {
   max-width: 1400px;
-  min-width: 1000px;
+  /* min-width: 1000px; */
+  /* hatte ich angegeben, bevor Media Queries angelegt wurden, damit der Rollschuhmann nicht unschön über den Text läuft */
   width: 100vw;
   margin: 0 auto;
 }
@@ -34,6 +35,7 @@ h1 {
 h2 {
   font-size: clamp(3rem, 3vw, 3.9rem);
   font-weight: 300;
+  margin: 0 2vw;
 }
 
 h3 {
@@ -61,7 +63,7 @@ header {
 }
 
 /* ! Nav-Leiste */
-header div {
+.navigation {
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
@@ -94,10 +96,22 @@ header a {
   border: 1px solid white;
 }
 
-/* ! Header-Bild*/
+/* ! Burger-Menu */
+.burger {
+  background-color: #2b2c2e;
+  width: 20px;
+  height: 3px;
+  border-radius: 4px;
+  margin: 2px;
+
+  display: none;
+}
+
+/* ! Header-Bild */
 header article h2 {
   text-align: center;
   padding: 4vh 0;
+  margin: 40px;
 }
 
 /* ! Section 1: Price */
@@ -131,9 +145,6 @@ header article h2 {
 
   padding: 0 5vw;
   margin-bottom: 15vh;
-
-  /* background: url(../img/home_deliverables.png) left no-repeat;
-  background-size: contain; */
 }
 
 .deliverables img {
@@ -144,8 +155,6 @@ header article h2 {
 
 .deliverables div {
   width: 50%;
-
-  /* nach links schieben, falls Bild als Hintergrundbild fungiert */
 }
 
 .deliverables h3,
@@ -198,7 +207,6 @@ header article h2 {
 
 .critique article {
   text-align: center;
-  margin-bottom: 15vh;
 }
 
 .critique h3 {
@@ -226,7 +234,7 @@ header article h2 {
 .percentage img {
   width: 45%;
   position: absolute;
-  bottom: -110px;
+  bottom: -80px;
   right: 130px;
 }
 
@@ -270,4 +278,59 @@ header article h2 {
 .questions a:hover {
   color: #707275;
   font-size: 1.8rem;
+}
+
+/* # Media Queries */
+/* 1130px, damit der Rollschuhmann hier schon umbricht und nicht den Text verdeckt */
+@media only screen and (max-width: 1130px) {
+  .percentage div {
+    text-align: center;
+  }
+
+  .percentage img {
+    width: 45%;
+    position: initial;
+  }
+
+  .percentage {
+    padding-left: 0;
+  }
+
+  .critique {
+    margin-bottom: 5vh;
+  }
+}
+
+/* ! Tablet */
+@media only screen and (max-width: 768px) {
+  .price,
+  .deliverables,
+  .works article {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .price {
+    align-items: center;
+  }
+}
+
+/* ! Mobile */
+@media only screen and (max-width: 567px) {
+  nav {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .navigation {
+    align-items: center;
+  }
+
+  .price p:nth-of-type(1),
+  .deliverables div {
+    width: 70%;
+  }
 }
